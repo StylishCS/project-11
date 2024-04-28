@@ -4,6 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 const errorController = require("./controllers/error");
+require("dotenv").config();
 const UserPrivileges = require("./middlewares/protect");
 
 const app = express();
